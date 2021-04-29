@@ -8,15 +8,16 @@ Link para testar: https://mart2222.github.io/pj-pokemon-angular/
   Usado a api: https://pokeapi.co/api/v2
 
 > Comando usados para iniciar o projeto:
-> ng new pokemon-djeison;
 > 
-> npm i --save serve;
+> ng new pokemon-djeison
 > 
-> npm i --save bootstrap;
+> npm i --save serve
 > 
-> npm i --save ngx-bootstrap;
+> npm i --save bootstrap
 > 
-> npm i --save bootstrap-icons;
+> npm i --save ngx-bootstrap
+> 
+> npm i --save bootstrap-icons
 
 `$ npm install`
 
