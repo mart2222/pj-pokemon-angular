@@ -1,0 +1,46 @@
+<div class="jogo-adivinhacao-pokemon">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="jogo-adivinhacao-pokemon_title text-uppercase">Jogo de Adivinhação</h2>
+    </div>
+    <ng-container *ngIf="pokemon">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-sm-4 mb-4">
+          <app-card-adivinhacao-pokemon
+            [pokemon]="pokemon"
+            [selecionou]="selecionou">
+          </app-card-adivinhacao-pokemon>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div>
+          <app-opcao-adivinhacao-pokemon
+            [pokemon]="poke"
+            [selecionou]="selecionou"
+            (selected)="selecionou = $event"
+            *ngFor="let poke of pokemons">
+          </app-opcao-adivinhacao-pokemon>
+        </div>
+      </div>
+      <div
+        class="row justify-content-center"
+        *ngIf="selecionou">
+        <div class="col-lg-4 col-sm-4 mb-4">
+          <alert class="text-center" [type]="acertou ? 'success' : 'danger'">
+            <strong>{{ acertou ? 'Acertou!' : 'Errou!' }} </strong>
+          </alert>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <button
+          *ngIf="selecionou"
+          (click)="jogarNovamente()"
+          type="button"
+          class="btn btn-primary">
+          Jogar novamente
+        </button>
+      </div>
+    </ng-container>
+    <div *ngIf="loadingListaPokemon" class="spinner-border"></div>
+  </div>
+</div>

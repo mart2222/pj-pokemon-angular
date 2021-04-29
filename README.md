@@ -1,27 +1,50 @@
-# PokemonDjeison
+# Olá :cat:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+---
+Link para testar: https://mart2222.github.io/pj-pokemon-angular/
 
-## Development server
+## Projeto Pokémon em Angular 11
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  Usado a api: https://pokeapi.co/api/v2
 
-## Code scaffolding
+> Comando usados para iniciar o projeto:
+> ng new pokemon-djeison
+> npm i --save serve
+> npm i --save bootstrap
+> npm i --save ngx-bootstrap
+> npm i --save bootstrap-icons
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`$ npm install`
 
-## Build
+## Intalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`$ npm install`
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Iniciar
 
-## Running end-to-end tests
+`$ npm start`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+---
 
-## Further help
+## Gerar arquivos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`$ npm run build`
+
+---
+
+### Pré visualização
+
+---
+
+![](https://raw.githubusercontent.com/mart2222/pj-pokemon-angular/master/image/1.JPG)
+
+![](https://raw.githubusercontent.com/mart2222/pj-pokemon-angular/master/image/2.JPG)
+
+![](https://raw.githubusercontent.com/mart2222/pj-pokemon-angular/master/image/3.JPG)
+
+![](https://raw.githubusercontent.com/mart2222/pj-pokemon-angular/master/image/4.JPG)
+
+---
+### Obrigado! :100:

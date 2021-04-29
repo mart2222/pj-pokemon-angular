@@ -1,0 +1,42 @@
+@import "partials/variables";
+
+.card-adivinhacao-pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  span {
+    font-size: $big-3;
+    font-weight: $bold;
+  }
+
+  &_img {
+    width: 250px;
+    filter: brightness(0);
+    border: 1px solid $color5;
+    border-radius: 30px;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+
+    &_selecionou {
+      border: 3px solid $color2;
+      filter: none;
+    }
+
+    &_acertou {
+      border: 3px solid $color6;
+    }
+  }
+
+  &_no-image {
+    position: relative;
+    pointer-events: none;
+
+    .spinner-border {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "partials/variables";
+
+.label-atributo-pokemon {
+  display: flex;
+  align-items: center;
+
+  &_label {
+    min-width: 140px;
+  }
+
+  .progress {
+    width: 100%;
+    margin: 0 10px;
+  }
+}

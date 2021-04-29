@@ -1,0 +1,47 @@
+<div class="card-pokemon">
+  <div class="card-pokemon_item">
+    <i
+      *ngIf="!fixed"
+      [tooltip]="tooltipFavorito"
+      class="bi bi-heart-fill card-pokemon_coracao"
+      [class.card-pokemon_coracao_favorito]="item.favorito"
+      (click)="clickFavorito()">
+    </i>
+    <div class="card-pokemon_link">
+      <div
+        class="card-pokemon_hover"
+        [class.card-pokemon_fixed_hover]="fixed">
+        <div class="card-pokemon_content">
+          <i class="fas fa-plus fa-3x"></i>
+        </div>
+      </div>
+      <carousel
+        *ngIf="!loadingImage"
+        [isAnimated]="true"
+        tooltip="Clique para visualizar os detalhes"
+        [indicatorsByChunk]="false">
+        <slide *ngFor="let img of item.imgs">
+          <img (click)="openModal(modalTemplate)" [src]="img" alt="...">
+        </slide>
+      </carousel>
+      <div
+        class="card-pokemon_no-image"
+        *ngIf="loadingImage">
+        <img src="../../../../assets/images/no-img.jpg" alt="...">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+    <div class="card-pokemon_caption">
+      <div class="card-pokemon_caption_heading">{{ item.nomePokemon }}</div>
+      <div class="card-pokemon_caption_subheading text-muted">
+        <span *ngIf="!loadingPeso">
+          Peso: {{ item.details?.weight }}
+        </span>
+        <div
+          class="spinner-border spinner-border-sm"
+          *ngIf="loadingPeso">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

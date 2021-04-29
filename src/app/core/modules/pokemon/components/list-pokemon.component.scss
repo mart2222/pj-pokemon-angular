@@ -1,0 +1,10 @@
+@import "partials/variables";
+
+.list-pokemon {
+  padding: 20px 0;
+
+  &_title {
+    color: $primary-color;
+    font-weight: $extra-bold;
+  }
+}

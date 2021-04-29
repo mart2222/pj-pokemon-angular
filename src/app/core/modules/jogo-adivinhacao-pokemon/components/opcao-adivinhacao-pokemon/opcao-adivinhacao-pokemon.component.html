@@ -1,0 +1,8 @@
+<div
+  (click)="seleciona()"
+  class="opcao-adivinhacao-pokemon noselect-text"
+  [class.opcao-adivinhacao-pokemon_selecionou]="selecionou"
+  [class.opcao-adivinhacao-pokemon_acertou]="selecionou && pokemon.adivinhacao"
+  [class.opcao-adivinhacao-pokemon_errou]="selecionou && errou">
+  {{ pokemon.nomePokemon }}
+</div>

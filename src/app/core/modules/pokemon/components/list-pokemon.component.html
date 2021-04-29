@@ -1,0 +1,31 @@
+<div class="list-pokemon">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="list-pokemon_title text-uppercase">Pokémons</h2>
+      <h3 class="text-muted">Listagem dos pokémons</h3>
+    </div>
+    <ng-container *ngIf="pokemonContent">
+      <div class="row">
+        <div
+          class="col-lg-3 col-sm-4 mb-3"
+          *ngFor="let item of pokemonContent.results">
+          <app-card-pokemon [item]="item"></app-card-pokemon>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <pagination
+          [boundaryLinks]="true"
+          [totalItems]="pokemonContent.count"
+          [(ngModel)]="currentPage"
+          (pageChanged)="pageChanged($event)"
+          [maxSize]="5"
+          firstText="Início"
+          nextText="Próximo"
+          previousText="Anterior"
+          lastText="Último">
+        </pagination>
+      </div>
+    </ng-container>
+    <div *ngIf="loadingListaPokemon" class="spinner-border"></div>
+  </div>
+</div>

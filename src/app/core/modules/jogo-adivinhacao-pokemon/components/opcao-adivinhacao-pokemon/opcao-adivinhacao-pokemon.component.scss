@@ -1,0 +1,35 @@
+@import "partials/variables";
+
+.opcao-adivinhacao-pokemon {
+  font-size: $big-2;
+  font-weight: $extra-bold;
+  border: 1px solid $color5;
+  border-radius: 8px;
+  padding: 5px 10px;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &_selecionou {
+    pointer-events: none;
+  }
+
+  &_acertou {
+    transform: scale(1.1);
+    border: 3px solid $color6;
+    color: $color6;
+  }
+
+  &_errou {
+    border: 2px solid $color2;
+    color: $color2;
+  }
+}
+
+.opcao-adivinhacao-pokemon:hover {
+  transform: scale(1.1);
+  border: 3px solid $primary-color;
+  color: $primary-color;
+}

@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a
+    class="navbar-brand"
+    href="#">
+    Djeison
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="toggleCollapsed()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse justify-content-end"
+    id="navbarNav"
+    [collapse]="isCollapsed"
+    [isAnimated]="true">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="lista"
+          href>
+          Lista Pokémon <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          routerLink="jogo-adivinhacao"
+          class="nav-link"
+          href>
+          Jogo de Adivinhação
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

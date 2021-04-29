@@ -1,0 +1,19 @@
+<div class="card-adivinhacao-pokemon">
+  <img
+    class="card-adivinhacao-pokemon_img"
+    [class.card-adivinhacao-pokemon_img_selecionou]="selecionou"
+    [class.card-adivinhacao-pokemon_img_acertou]="acertou"
+    *ngIf="!loadingImage"
+    [src]="img"
+    alt="...">
+
+  <div
+    class="card-adivinhacao-pokemon_no-image"
+    *ngIf="loadingImage">
+    <img
+      src="../../../../../../assets/images/no-img.jpg"
+      alt="...">
+    <div class="spinner-border"></div>
+  </div>
+  <span>Qual é o Pokémo?</span>
+</div>

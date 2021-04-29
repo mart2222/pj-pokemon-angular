@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import "partials/variables";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+.page-item.active .page-link {
+  background-color: $primary-color;
+  border-color: $primary-dark-color;
+}
+
+@keyframes animacaoBatidaCoracao {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.progress-bar {
+  background-color: $primary-color;
+}
+
+.noselect-text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

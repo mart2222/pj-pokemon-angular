@@ -1,0 +1,10 @@
+@import "partials/variables";
+
+.jogo-adivinhacao-pokemon {
+  padding: 10px 0px 35px;
+
+  &_title {
+    color: $primary-color;
+    font-weight: $extra-bold;
+  }
+}

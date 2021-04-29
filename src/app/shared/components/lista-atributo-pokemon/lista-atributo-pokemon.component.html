@@ -1,0 +1,12 @@
+<div class="lista-atributo-pokemon">
+  <div
+    class="row"
+    *ngFor="let atributo of atributos">
+    <div class="col-sm-12">
+      <app-label-atributo-pokemon
+        [atributo]="atributo"
+        [maiorValor]="maiorValor">
+      </app-label-atributo-pokemon>
+    </div>
+  </div>
+</div>
