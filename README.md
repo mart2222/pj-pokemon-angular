@@ -1,7 +1,5 @@
 # Olá :cat:
 
----
-Link para testar: https://mart2222.github.io/pj-pokemon-angular/
 
 ## Projeto Pokémon em Angular 11
 
@@ -19,7 +17,6 @@ Link para testar: https://mart2222.github.io/pj-pokemon-angular/
 > 
 > npm i --save bootstrap-icons
 
-`$ npm install`
 
 ## Intalação
 
